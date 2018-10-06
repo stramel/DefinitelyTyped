@@ -59,6 +59,10 @@ declare namespace proxy {
     cookieDomainRewrite?: false | string | { [domain: string]: string };
     headers?: { [header: string]: string };
     proxyTimeout?: number;
+    timeout?: number;
+    followRedirects?: boolean;
+    selfHandleResponse?: boolean;
+    buffer?: Buffer;
     /**
      * @deprecated
      */
